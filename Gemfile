@@ -12,6 +12,7 @@ gem 'activeadmin'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'cocoon'
+gem 'thin'
 
 gem 'friendly_id'
 
@@ -19,14 +20,13 @@ gem 'friendly_id'
 #gem 'haml-rails'
  
 group :production do
- gem 'unicorn'
  gem 'newrelic_rpm'
 end
 
 group :development, :test do
   gem 'sqlite3'
   gem 'annotate'
-  gem 'thin'
+  
   gem 'rack-mini-profiler'
 end
 
